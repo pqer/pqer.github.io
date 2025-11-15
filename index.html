@@ -4,7 +4,12 @@
     <title>Internal JavaScript in Head</title>
     <script>
       alert("No sleep!");
-      navigator.wakeLock.request('screen');
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          navigator.wakeLock.request("screen")
+        }
+      });
     </script>
   </head>
   <body>
