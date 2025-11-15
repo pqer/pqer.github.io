@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Internal JavaScript in Head</title>
-    <script>
-      alert("No sleep tonight!");
-
-      import NoSleep from 'nosleep';
-      const noSleep = new NoSleep();
-      
-      // Call this in a user-initiated event like a button click
-      document.addEventListener('touchstart', function enableNoSleep() {
-        noSleep.enable();
-        // Remove the listener after the first activation to avoid memory leaks
-        this.removeEventListener('touchstart', enableNoSleep, false);
-      }, false);
-    </script>
+    <title>Screen Wake Lock Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>My Web Page</h1>
-    <iframe src="https://trinket.io/embed/python/1beec0f343a6?outputOnly=true&runOption=run" width="800" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h1>Screen Wake Lock Demo</h1>
+    <div>
+      <label><input type="checkbox" id="wakeLockCheckbox">
+        Activate
+        <code>screen</code>
+        Wake Lock</label>
+    </div>
+    <div>
+      <label><input type="checkbox" id="reacquireCheckbox">
+        Re-Acquire
+        <code>screen</code>
+        Wake Lock On Visibility Changes</label>
+    </div>
+    <div>
+      <button id="fullScreenButton" type="button">Go Full Screen</button>
+    </div>
+    <div id="statusDiv"></div>
+    <div>
+      <iframe src="https://trinket.io/embed/python/1beec0f343a6?outputOnly=true&runOption=run" width="800" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
+
+
   </body>
 </html>
