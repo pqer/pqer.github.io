@@ -3,13 +3,17 @@
   <head>
     <title>Internal JavaScript in Head</title>
     <script>
-      alert("No sleep for Brooklyn!");
+      alert("No sleep tonight!");
 
-      document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') {
-          navigator.wakeLock.request("screen")
-        }
-      });
+      import NoSleep from 'nosleep';
+      const noSleep = new NoSleep();
+      
+      // Call this in a user-initiated event like a button click
+      document.addEventListener('touchstart', function enableNoSleep() {
+        noSleep.enable();
+        // Remove the listener after the first activation to avoid memory leaks
+        this.removeEventListener('touchstart', enableNoSleep, false);
+      }, false);
     </script>
   </head>
   <body>
