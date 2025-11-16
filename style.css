@@ -17,10 +17,3 @@ div {
   background-color: #eee;
 }
 
-.indent-1 {
-  float: left;
-}
-
-.indent-1 section {
-  width: 20%; float: left;
-}
