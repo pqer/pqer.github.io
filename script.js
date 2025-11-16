@@ -7,10 +7,10 @@ const fullScreenButton = document.querySelector('#fullScreenButton');
 fullScreenButton.addEventListener('click', () => {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
-    fullScreenButton.textContent = '';
+    fullScreenButton.textContent = 'Leave Full Screen';
   } else {
     document.exitFullscreen();
-    fullScreenButton.textContent = '';
+    fullScreenButton.textContent = 'Enter Full Screen';
   }  
 });
 
