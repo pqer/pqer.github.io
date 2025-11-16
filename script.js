@@ -32,7 +32,7 @@ if ('WakeLock' in window && 'request' in window.WakeLock) {
       }
     });
     wakeLockCheckbox.checked = true;
-    statusDiv.textContent = 'Keep Phone Awake';
+    statusDiv.textContent = 'OK';
     console.log('Wake Lock is active');
     return controller;
   };
@@ -74,7 +74,7 @@ if ('WakeLock' in window && 'request' in window.WakeLock) {
         console.log('Wake Lock was released');                    
       });
       wakeLockCheckbox.checked = true;
-      statusDiv.textContent = 'Keep Phone Awake';
+      statusDiv.textContent = 'OK';
       console.log('Wake Lock is active');      
     } catch (e) {      
       wakeLockCheckbox.checked = false;
