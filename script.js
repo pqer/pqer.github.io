@@ -70,8 +70,8 @@ if ('WakeLock' in window && 'request' in window.WakeLock) {
       wakeLock.addEventListener('release', (e) => {
         console.log(e);
         wakeLockCheckbox.checked = false;
-        statusDiv.textContent = 'Wake Lock was released';
-        console.log('Wake Lock was released');                    
+        statusDiv.textContent = '';
+        console.log('');                    
       });
       wakeLockCheckbox.checked = true;
       statusDiv.textContent = 'OK';
