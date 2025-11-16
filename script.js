@@ -32,7 +32,7 @@ if ('WakeLock' in window && 'request' in window.WakeLock) {
       }
     });
     wakeLockCheckbox.checked = true;
-    statusDiv.textContent = 'Wake Lock is active';
+    statusDiv.textContent = 'Keep Phone Awake';
     console.log('Wake Lock is active');
     return controller;
   };
