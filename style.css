@@ -13,6 +13,10 @@ div {
   margin: 0em 0em;
 }
 
+.div-with-margin {
+  margin: 2em 2em;
+}
+
 #statusDiv {  
   background-color: #eee;
 }
