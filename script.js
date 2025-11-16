@@ -74,7 +74,7 @@ if ('WakeLock' in window && 'request' in window.WakeLock) {
         console.log('Wake Lock was released');                    
       });
       wakeLockCheckbox.checked = true;
-      statusDiv.textContent = 'Wake Lock is active';
+      statusDiv.textContent = 'Keep Phone Awake';
       console.log('Wake Lock is active');      
     } catch (e) {      
       wakeLockCheckbox.checked = false;
