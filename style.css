@@ -4,8 +4,8 @@ body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 0em;
   /* Pushes content down by 50px and right by 30px from the viewport edge */
-  margin-top: 50px;
-  margin-left: 30px;
+  margin-top: -50px;
+  margin-left: -30px;
 }
 
 h1 {  
