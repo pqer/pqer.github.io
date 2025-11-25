@@ -3,8 +3,8 @@
 body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 0em;
-  /* Pushes content left by 30px from the viewport edge. */
-  margin-left: -30px;
+  /* Pushes content left by 60px from the viewport edge. */
+  margin-left: -60px;
 }
 
 h1 {  
@@ -16,7 +16,7 @@ div {
 }
 
 .div-with-margin {
-  margin: 1em 10em;
+  margin: 1em 3em;
 }
 
 #statusDiv {  
