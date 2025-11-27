@@ -4,7 +4,7 @@ body {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 0em;
   /* Pushes content left by 60px from the viewport edge. */
-/*  margin-left: -60px; */
+  margin-left: -60px;
 }
 
 h1 {  
